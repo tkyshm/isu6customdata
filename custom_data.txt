@@ -23,7 +23,7 @@ git config --global user.email "isucon@isucon.net"
 #sudo sh -c "echo "'OTHER_OPTS=\"-role=Portal:worker\" >> /etc/default/mackerel-agent'
 #general sudo /etc/init.d/mackerel-agent start
 
-git clone git@github.com:Songmu/isucon6-qualifier /tmp/isucon6-qualifier
+git clone git@github.com:isucon/isucon6-qualifier /tmp/isucon6-qualifier
 cd /tmp/isucon6-qualifier/provisioning/bench
 PYTHONUNBUFFERED=1 ANSIBLE_FORCE_COLOR=true ansible-playbook -i localhost, ansible/*.yml --connection=local
 cd /tmp && rm -rf /tmp/isucon6-qualifier
